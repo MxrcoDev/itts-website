@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Piedi</title>
-    </head>
-    <body>
-        <header>
-            <img src="img\logo-repubblica-italiana.svg" alt="Logo">
-            Ministero dell'istruzione
-        </header>
-        <nav>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istituto Tecnico Tecnologico Statale "Vito Volterra"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-header">
+        <div class="ministry-logo">
+            <img src="img/logo-repubblica-italiana.svg" alt="Logo Ministero">
+            <span>Ministero dell'Istruzione</span>
+        </div>
+        <a href="#" class="login-btn">
+            <span>Accedi</span>
+        </a>
+    </header>
+
+    <div class="school-header">
+        <div class="school-info">
+                <img class="school-logo" src="https://www.istitutovolterra.edu.it/wp-content/themes/scuole-tema-child/template-parts/common/logo_volterra_120.jpg" alt="Logo Scuola" width="50" height="50">
+            <div class="school-name">
+                <h1>Istituto Tecnico Tecnologico Statale</h1>
+                <h2>"Vito Volterra"</h2>
+                <p>San Donà di Piave (VE)</p>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="search" placeholder="Cerca">
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
             <ul>
-                <li><a href="">Scuola</a></li>
-                <li><a href="">Servizi</a></li>
-                <li><a href="">Novità</a></li>
-                <li><a href="">Didattica</a></li>
-              </ul>
-        </nav>
-    </body>
+                <li><a href="#" class="scuola">Scuola</a></li>
+                <li><a href="#" class="servizi">Servizi</a></li>
+                <li><a href="#" class="novita">Novità</a></li>
+                <li><a href="#" class="didattica">Didattica</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="https://www.istitutovolterra.edu.it/wp-content/uploads/2023/06/Panoramica_scuola_volterra.jpg" alt="Edificio scolastico">
+        <div class="hero-content">
+            <h2>Istituto Tecnico Tecnologico Statale</h2>
+            <h3>"Vito Volterra"</h3>
+            <p>San Donà di Piave (VE)</p>
+            <button class="hero-button">Vai alla scuola</button>
+        </div>
+    </div>
+
+    
+</body>
 </html>
