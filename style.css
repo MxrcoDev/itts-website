@@ -1,0 +1,29 @@
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+  
+  :root {
+    --background: #F3EFE0;
+    --primario: #5A7684;
+    --secondario: #0C0A3E;
+    --terziario: #573D1C;
+    --accent: #D1462F;
+}
+
+body {
+    margin:0;
+    background-color: var(--background);
+}
+
+header {
+    border: 0;
+    margin: 0;
+    background-color: rgb(121, 121, 250);
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+}
