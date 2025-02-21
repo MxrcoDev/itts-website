@@ -1,9 +1,9 @@
 :root {
-    --background: #F3EFE0;
-    --primario: #5A7684;
-    --secondario: #0C0A3E;
-    --terziario: #573D1C;
-    --accent: #D1462F;
+    --sfondo: #f0f2f5;
+    --primario: #1e3a8a;
+    --secondario: #4338ca;
+    --terziario: #3730a3;
+    --accento: #ef4444;
 }
 
 * {
@@ -19,7 +19,7 @@ body {
 
 /* Header sito */
 .top-header {
-    background-color: #1e3a8a;
+    background-color: var(--primario);
     color: white;
     padding: 1rem;
     display: flex;
@@ -127,8 +127,8 @@ body {
     display: block;
 }
 
-.main-nav a.scuola { color: var(--accent); }
-.main-nav a.servizi { color: purple; }
+.main-nav a.scuola { color: red; }
+.main-nav a.servizih { color: purple; }
 .main-nav a.novita { color: green; }
 .main-nav a.didattica { color: blue; }
 
@@ -149,7 +149,7 @@ body {
     position: absolute;
     left: 4rem;
     top: 25%;
-    background-color: #1e3a8a;
+    background-color: var(--primario);
     color: white;
     padding: 2rem;
     max-width: 500px;
@@ -167,10 +167,107 @@ body {
 
 .hero-button {
     background-color: white;
-    color: #1e3a8a;
+    color: var(--primario);
     padding: 0.5rem 1.5rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+/* Indirizzi */
+.indirizzi {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0;
+    background-color: white;
+    margin: 2rem 0;
+}
+
+.indirizzo-card {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.indirizzo-card:hover {
+    transform: translateY(-10px);
+}
+
+.indirizzo-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.grafica { background-color: #dc2626; }
+.elettrotecnica { background-color: #d97706; }
+.informatica { background-color: #059669; }
+
+/* Servizi */
+.servizi {
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, var(--primario), rgb(161, 54, 161));
+    color: white;
+}
+
+.servizi-contenuto {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.servizi-griglia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.servizio-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    color: var(--primario);
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+
+/* Piè di pagina */
+.pie-di-pagina {
+    background-color: var(--primario);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.contenuto-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.colonna-footer h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.colonna-footer ul {
+    list-style: none;
+}
+
+.colonna-footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
 }
