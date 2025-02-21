@@ -1,10 +1,4 @@
-* {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
-  
-  :root {
+:root {
     --background: #F3EFE0;
     --primario: #5A7684;
     --secondario: #0C0A3E;
@@ -12,18 +6,171 @@
     --accent: #D1462F;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin:0;
+    font-family: Arial, sans-serif;
     background-color: var(--background);
 }
 
-header {
-    border: 0;
-    margin: 0;
-    background-color: rgb(121, 121, 250);
+/* Header sito */
+.top-header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header img{
-    height: 50px;
-    width: 50px;
+.ministry-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ministry-logo img {
+    height: 40px;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Header scuola */
+.school-header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.school-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.school-logo {
+    background-color: var(--primario);
+    border-radius: 50%;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-name {
+    color: var(--secondario);
+}
+
+.school-name h1 {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.school-name h2 {
+    color: var(--terziario);
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+}
+
+.school-name p {
+    color: var(--primario);
+    font-size: 0.9rem;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* Nav principale */
+.main-nav {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    padding: 1rem 0;
+    display: block;
+}
+
+.main-nav a.scuola { color: var(--accent); }
+.main-nav a.servizi { color: purple; }
+.main-nav a.novita { color: green; }
+.main-nav a.didattica { color: blue; }
+
+/* Sezione hero */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    left: 4rem;
+    top: 25%;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 2rem;
+    max-width: 500px;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-button {
+    background-color: white;
+    color: #1e3a8a;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
 }
